@@ -1,7 +1,7 @@
 FROM alpine:3.4
 
-ENV CONSUL_VERSION 0.6.4
-ENV CONSUL_SHA256 abdf0e1856292468e2c9971420d73b805e93888e006c76324ae39416edcf0627
+ENV CONSUL_VERSION 0.7.0
+ENV CONSUL_SHA256 b350591af10d7d23514ebaa0565638539900cdb3aaa048f077217c4c46653dd8 
 
 RUN apk --no-cache add curl ca-certificates \
     && curl -sSL https://releases.hashicorp.com/consul/${CONSUL_VERSION}/consul_${CONSUL_VERSION}_linux_amd64.zip -o /tmp/consul.zip \
